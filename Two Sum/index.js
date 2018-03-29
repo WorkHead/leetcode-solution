@@ -4,9 +4,9 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    for(let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         const j = nums.indexOf(target - nums[i])
-        if(~j && j !== i) {
+        if (~j && j !== i) {
             return [i, j]
         }
     }
