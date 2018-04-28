@@ -7,17 +7,17 @@ var searchInsert = function(nums, target) {
     let high = nums.length - 1;
     let low = 0;
     
-    while(high > low) {
+    while(high >= low) {
         let mid = parseInt((high + low) / 2);
         
         if (nums[mid] === target) {
             return mid;
         } else if (nums[mid] > target) {
-            hight = mid;
+            high = mid - 1;
         } else {
-            low = mid;
+            low = mid + 1;
         }
     }
     
-    return 0
+    return low;
 };
