@@ -21,3 +21,5 @@ var searchInsert = function(nums, target) {
     
     return low;
 };
+
+searchInsert([1, 2, 4, 5], 3)
